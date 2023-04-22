@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <title>Weather Report</title>
+</head>
+<body>
+    <!-- Landing Page -->
+    <div class="landingpage-container" id="LandingPage">
+        <h1>Weather Api</h1>
+        <button class="fetch-btn" id="fetchData">Fetch Data</button>
+    </div>
+
+    <!-- Weather-info Page -->
+    <div class="infopage-container" id="infopage">
+        <div class="map-section">
+            <h2>Weather Api</h2>
+            <div class="cordinates">
+                <div class="lat-container">
+                    <span>Lat:</span>
+                    <span id="lat"></span>
+                </div>
+                <div class="long-container">
+                    <span>Long:</span>
+                    <span id="long"></span>
+                </div>
+            </div>
+            <iframe
+                id="map"
+                width="1000"
+                height="350"
+                style="border:0"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDdK90QjLAmTrjXrr7OvosBkcOFIswmXCs&q=Space+Needle,Seattle+WA">
+            </iframe>
+        </div>
+        <div class="weather-conatiner">
+            <p class="w-heading">Weather Data</p>
+            <div class="data-conatiner">
+                <div class="data">
+                    <span>Location:</span>
+                    <span id="location"></span>
+                </div>
+                <div class="lat-long">
+                    <div class="lat">
+                        <span>Lat:</span>
+                        <span id="lati"></span>
+                    </div>
+                    <div class="long">
+                        <span>Lat:</span>
+                        <span id="longi"></span>
+                    </div>
+                </div>
+                <div class="data">
+                    <span>TimeZone:</span>
+                    <span id="time-zone"></span>
+                </div>
+                <div class="data">
+                    <span>Wind Speed:</span>
+                    <span id="windspeed"></span>
+                </div>
+                <div class="data">
+                    <span>Pressure:</span>
+                    <span id="pressure"></span>
+                </div>
+                <div class="data">
+                    <span>Humidity:</span>
+                    <span id="humidity"></span>
+                </div>
+                <div class="data">
+                    <span>Wind Direction:</span>
+                    <span id="wind-dir"></span>
+                </div>
+                <div class="data">
+                    <span>UV Index:</span>
+                    <span id="uv"></span>
+                </div>
+                <div class="data">
+                    <span>Feels Like:</span>
+                    <span id="feels-like"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>

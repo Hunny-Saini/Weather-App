@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    /* background-color: #000000; */
+}
+
+.landingpage-container{
+    background-color: #000000;
+    color: #FFFFFF;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 40px;
+    /* display: none; */
+}
+
+h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.fetch-btn{
+    height: 40px;
+    width: 360px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* info page */
+.infopage-container{
+    display: none;
+}
+
+.map-section{
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.weather-conatiner{
+    padding: 2rem 2rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+.w-heading{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.data-conatiner{
+    display: flex;
+    flex-flow: column;
+    gap: 1.5rem;
+    border: 1px solid black;
+    padding: 1.5rem;
+}
+
+.lat-long{
+    display: flex;
+    gap: 30rem;
+}
+
+.cordinates{
+    display: flex;
+    gap: 32rem;
+    width: 1000px;
+}
